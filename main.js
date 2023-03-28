@@ -1,5 +1,5 @@
 function fetchBook(isbn) {
-    fetch(`https://openlibrary.org/isbn/${isbn}`)
+    fetch(`https://openlibrary.org/isbn/${isbn}.json`)
     .then (response => response.json())
     .then (data => console.log(data))
 }
